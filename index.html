@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pelican Bike Ride</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;overflow:hidden;font-family:system-ui,-apple-system,"PingFang SC",sans-serif;background:linear-gradient(#8fd5ff 0 67%,#ead58c 67%);color:#17324d}
+h1{position:absolute;top:7vh;width:100%;text-align:center;font-size:clamp(38px,7vw,80px);margin:0;text-shadow:0 4px #fff8;z-index:5}
+.sub{position:absolute;top:18vh;width:100%;text-align:center;font-size:18px;z-index:5}
+.sun{position:absolute;right:8vw;top:7vh;width:88px;height:88px;border-radius:50%;background:#ffd652;box-shadow:0 0 0 18px #ffd65235}
+.cloud{position:absolute;width:150px;height:44px;background:#fff;border-radius:30px;opacity:.9;animation:drift 18s linear infinite}.cloud:before,.cloud:after{content:"";position:absolute;background:#fff;border-radius:50%}.cloud:before{width:60px;height:60px;left:25px;top:-28px}.cloud:after{width:75px;height:75px;right:18px;top:-38px}.c1{top:24%;left:-180px}.c2{top:39%;left:-320px;animation-delay:-8s;transform:scale(.72)}@keyframes drift{to{left:110%}}
+.road{position:absolute;left:0;right:0;bottom:0;height:33vh;background:#465868}.road:before{content:"";position:absolute;top:18%;left:0;right:0;height:8px;background:#f9edb8}.road:after{content:"";position:absolute;bottom:22%;left:0;right:0;height:6px;background:repeating-linear-gradient(90deg,#fff 0 70px,transparent 70px 130px)}
+.scene{position:absolute;left:50%;bottom:12vh;width:500px;height:330px;transform:translateX(-50%) scale(min(1,calc(100vw / 540)));transform-origin:bottom center;z-index:4;animation:float .55s ease-in-out infinite alternate}@keyframes float{to{transform:translateX(-50%) translateY(-6px) scale(min(1,calc(100vw / 540)))}}
+.wheel{position:absolute;bottom:0;width:140px;height:140px;border:11px solid #162432;border-radius:50%;background:repeating-conic-gradient(#aebbc4 0 1deg,transparent 1deg 15deg)}.w1{left:35px}.w2{right:30px}
+.frame{position:absolute;left:135px;bottom:62px;width:210px;height:100px;border-left:10px solid #df4c4c;border-bottom:10px solid #df4c4c;transform:skew(-24deg)}.frame:after{content:"";position:absolute;left:95px;top:-8px;width:10px;height:118px;background:#df4c4c;transform:skew(24deg) rotate(58deg);transform-origin:top}
+.seat{position:absolute;left:210px;bottom:165px;width:60px;height:14px;border-radius:20px;background:#172431}.handle{position:absolute;right:112px;bottom:136px;width:65px;height:60px;border-top:8px solid #172431;border-right:8px solid #172431;border-radius:0 20px 0 0}
+.pedal{position:absolute;left:232px;bottom:75px;width:28px;height:28px;border:6px solid #172431;border-radius:50%;animation:spin .5s linear infinite}.pedal:after{content:"";position:absolute;left:9px;top:9px;width:52px;height:5px;background:#172431;transform-origin:left}@keyframes spin{to{transform:rotate(360deg)}}
+.pelican{position:absolute;left:135px;bottom:125px;width:240px;height:210px}.body{position:absolute;left:48px;top:78px;width:135px;height:118px;background:#faf8f1;border:5px solid #21384b;border-radius:58% 45% 55% 48%}.wing{position:absolute;left:63px;top:108px;width:95px;height:68px;background:#e2e5e4;border:5px solid #21384b;border-radius:70% 35% 65% 40%;transform:rotate(17deg)}.neck{position:absolute;left:113px;top:37px;width:58px;height:105px;background:#faf8f1;border:5px solid #21384b;border-radius:48% 48% 30% 30%;transform:rotate(-13deg)}.head{position:absolute;left:120px;top:2px;width:78px;height:74px;background:#faf8f1;border:5px solid #21384b;border-radius:50%}.eye{position:absolute;left:164px;top:25px;width:10px;height:10px;background:#172431;border-radius:50%}.beak{position:absolute;left:182px;top:36px;width:100px;height:37px;background:#f4a52b;border:5px solid #21384b;border-left:0;border-radius:0 75% 70% 40%}.pouch{position:absolute;left:184px;top:55px;width:76px;height:31px;background:#f7bd4e;border:4px solid #21384b;border-top:0;border-radius:0 0 70% 55%}.leg{position:absolute;top:178px;width:8px;height:58px;background:#eda735;transform-origin:top}.l1{left:102px;transform:rotate(20deg)}.l2{left:137px;transform:rotate(-18deg)}
+.badge{position:absolute;right:24px;bottom:18px;color:#fff9;font-size:13px}
+</style>
+</head>
+<body>
+<div class="sun"></div><div class="cloud c1"></div><div class="cloud c2"></div>
+<h1>Pelican Bike Ride</h1><div class="sub">一只认真骑自行车的鹈鹕 🚲</div>
+<div class="scene">
+<div class="wheel w1"></div><div class="wheel w2"></div><div class="frame"></div><div class="seat"></div><div class="handle"></div><div class="pedal"></div>
+<div class="pelican"><div class="body"></div><div class="wing"></div><div class="neck"></div><div class="head"></div><div class="eye"></div><div class="beak"></div><div class="pouch"></div><div class="leg l1"></div><div class="leg l2"></div></div>
+</div>
+<div class="road"><div class="badge">ghbhiee / pilican</div></div>
+</body></html>
